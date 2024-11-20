@@ -1,3 +1,29 @@
+GCompris-ra Release Notes: GCompris-ra is a fork of Gcompris-qt
+
+Ver24.11.2 (planned)
+Add new task which is a copy of Ordering Sentences 
+to be Ordering Words - Blitz.
+
+Ordering Words Blitz is a deep replication copy of Ordering Sentences, however the entire dataset will change. 
+
+The Blitz signifies a task which is made for the purpose of getting a large data set published quickly and will not worry with ordering the groups into sets like
+that which is currently done based on word length ? 
+
+Instead the sets will be based on the publish time, e.g 24.11.2-Set1Colours , 24.11.2-Set2Numbers. 
+
+So that way if more data is added in 24.11.3 or 24.12.1 then users will be able to skip sentences theyve already completed. 
+
+The aim is to later order the sets more logically, but that day is not today (or likely this month)
+
+
+
+
+Ver# 24.11.1
+Initial Released 19th November 2024 as a fork from a previous version of gcompris-qt that used QT5 (current gcompris-qt uses QT6).
+rename code so build process creates gcopmris-ra instead of gcompris-qt
+Display a screen on login showing the fork.
+
+
 gcompris-ra is a fork of gcompris-qt
 
 Alex, 20th Nov 2024
