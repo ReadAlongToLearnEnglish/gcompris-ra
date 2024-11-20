@@ -61,10 +61,10 @@ mkdir gcompris-ra
 cd gcompris-ra
 
 
-git clone https://github.com/<Username>/GCompris-ra.git
+git clone https://github.com/ReadAlongToLearnEnglish/GCompris-ra.git
 
 
-cd GCompris-rq
+cd GCompris-ra
 #this line may be incorrect, it could still be GCompris-qt
 
 git clone https://github.com//qml-box2d/qml-box2d.git external/qml-box2d/
