@@ -320,10 +320,10 @@ Window {
                         + qsTr("I hope people will find it useful.\n\n\n\n")
                         + "\n"
                         + qsTr("The fork isn't endorsed by the GCompris development team")
+// TODO:                        + ("<br><br>")
+// TODO:                        + qsTr("Notes: v24.5.0.1 initial build of memory-wordpicture")
                         + ("<br><br>")
-                        + qsTr("Notes: v24.5.0.1 initial build of memory-wordpicture")
-                        + ("<br><br>")
-                        + qsTr("Source code for this project can be found at: https://")
+                        + qsTr("Source code for this project can be found at: https://github.com/ReadAlongToLearnEnglish/gcompris-ra")
                         + ("<br><br>")
                         + qsTr("The project was initially forked on 17th December 2023.\n")
                         + qsTr("In this current release, my additions are a tiny faction of the total source code and I'm thankful to be able to stand on the shoulders of giants.\n\n\n\n")
