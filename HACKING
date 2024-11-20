@@ -1,0 +1,193 @@
+gcompris-ra is a fork of gcompris-qt
+
+GCompris-ra Release notes
+
+Versioning will now be in the format of gcompris-ra YY.MM.# where YY is the 
+year, MM is the month and # is release number for that month. 
+EG. A release on 27th Feb 2025 could be 25.02.05 and indicate its
+the fifth release that month. 
+
+The immediate plans are to change some parts to indicate the change,
+including putting in a popup on program start. and adding more word
+activities
+
+GCompris-ra is only supported on the Rapsberry pi (64 bit) using 
+RaspberryPiOS, however there are no plans to change things unnecessarily
+so that it should still be compatible with a broad range of platforms
+using the same methods to build gcompris-qt
+
+Downloadable Language packs are set to still come from the same servers
+
+Note: deveopers have since upgraded the current main source to use QT6 while
+this version uses QT5.
+
+I am not sure what would happen if both gcompris-qt and gcompris-ra are 
+installed on the same system, but they should work as long as they
+arent run at the same time.
+
+
+=====
+Note about GCompris-ra
+
+
+GCompris-ra is a fork of GCompris-qt
+
+It still uses the same QT libraries, but the different name is used to 
+signify the fork and try not to cause any problems which may be my fault
+to the original maintainers.  This fork is not endorsed by them however
+i would be considered honoured if they incorporated some changes. 
+
+It also changes the goal slightly. The original program is aimed at
+children 2-10 while GCompris-ra is more aimed at teenagers and adults
+learn the English language.
+
+-----
+Installation instructions for Raspberry Pi 64 bit 19th Nov 2024
+
+
+  sudo apt install cmake gettext libssl-dev libqt5svg5-dev \
+                          qml-module-qtmultimedia \
+                          qml-module-qtgraphicaleffects qt5-qmake qtcreator \
+                          qtdeclarative5-dev qtmultimedia5-dev \
+                          qtquickcontrols2-5-dev qttools5-dev \
+                          qttools5-dev-tools libqt5multimedia5-plugins \
+                          qml-module-qtsensors libqt5quickparticles5 \
+                          qml-module-qtquick2 qml-module-qtquick-particles2 \
+                          qml-module-qtquick-controls2 \
+                          libqt5sensors5-dev libqt5sensors5 qml-module-qtcharts \
+                          qt5-image-formats-plugins libqt5charts5-dev
+
+mkdir gcompris-ra
+cd gcompris-ra
+
+
+git clone https://github.com/<Username>/GCompris-ra.git
+
+
+cd GCompris-rq
+#this line may be incorrect, it could still be GCompris-qt
+
+git clone https://github.com//qml-box2d/qml-box2d.git external/qml-box2d/
+# Get a copy of this for gcompirs-ra so someone changing it may not be an issue
+
+
+
+
+mkdir build
+cd build
+cmake ..
+make
+
+sudo make install
+
+
+
+
+=====
+                        GCompris HACKING
+
+Official repository
+-------------------
+The official repository requires a KDE developer account, we will ask regular
+contributors to get an account and work on the KDE repository.
+
+    https://invent.kde.org/education/gcompris
+
+For new developers and those interested only in smaller contributions use the
+https://phabricator.kde.org/ or GitHub repository.
+
+
+Source code from GitHub
+-----------------------
+Checkout the source code by cloning it from GitHub
+
+    git clone https://github.com/gcompris/GCompris-qt.git
+
+If you want to have a personal fork, in order to commit occasional patches,
+fork it on GitHub then clone your fork
+
+    git clone git@github.com:<username>/GCompris-qt.git
+
+When asking for a pull request, create a new topic branch and commit your
+changes there then open a pull request to gcompris-qt repository on GitHub.
+
+See GitHub's documentation for more information.
+
+    https://help.github.com/categories/collaborating/
+
+
+Dependencies
+------------
+In order to be able to compile GCompris the following Qt5 dependencies need to
+be installed (version 5.12 minimum)
+
+    Qt 5 Development Defaults
+    Qt 5 qmake
+    Qt Creator
+    Qt Linguist Tools
+
+    Qt Core
+    Qt Graphical Effects QML Module
+    Qt Gui
+    Qt Multimedia
+    Qt Multimedia QML Module
+    Qt Network
+    Qt Qml
+    Qt Quick
+    Qt Svg
+    Qt Charts (qml plugin)
+
+CMake must be installed to compile GCompris:
+
+    sudo apt install cmake
+
+By default, translations are also built so gettext package must be installed to compile GCompris (to ignore translation files, run cmake with `-DSKIP_TRANSLATIONS=ON`:
+
+    sudo apt install gettext
+    
+Installing dependencies on a Debian based systems can be done like this:
+
+    sudo apt install libqt5svg5-dev \
+                          qml-module-qtmultimedia \
+                          qml-module-qtgraphicaleffects qt5-qmake qtcreator \
+                          qtdeclarative5-dev qtmultimedia5-dev \
+                          qtquickcontrols2-5-dev qttools5-dev \
+                          qttools5-dev-tools libqt5multimedia5-plugins \
+                          qml-module-qtsensors libqt5quickparticles5 \
+                          qml-module-qtquick2 qml-module-qtquick-particles2 \
+                          qml-module-qtquick-controls2 \
+                          libqt5sensors5-dev libqt5sensors5 qml-module-qtcharts \
+                          qt5-image-formats-plugins libqt5charts5-dev
+
+                          
+                    
+
+To build for Android, Qt 5 AndroidExtras also needs to be installed.
+
+If building from a .tar.gz or .zip source distribution the externals may
+need to be added.
+
+    cd GCompris-qt-*
+    git clone https://github.com/qml-box2d/qml-box2d.git external/qml-box2d/
+
+
+Build
+-----
+Start QtCreator and select Open Project and open CMakeLists.txt in the
+gcompris-qt root directory. Follow the wizard instructions.
+
+Use the buttons on the lower left side to build, run, and debug GCompris.
+
+An alternative building process is to use cmake in command-line directly.
+
+    cd GCompris-qt-*
+    mkdir build
+    cd build
+    cmake ..
+    make
+    ./bin/gcompris-qt
+
+More Details
+------------
+Go To this Link:
+          https://gcompris.net/wiki/Qt_Quick_development_process
