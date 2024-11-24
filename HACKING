@@ -44,7 +44,7 @@ learn the English language.
 -----
 Installation instructions for Raspberry Pi 64 bit 19th Nov 2024
 
-
+#Install software dependencies.
   sudo apt install cmake gettext libssl-dev libqt5svg5-dev \
                           qml-module-qtmultimedia \
                           qml-module-qtgraphicaleffects qt5-qmake qtcreator \
@@ -57,29 +57,22 @@ Installation instructions for Raspberry Pi 64 bit 19th Nov 2024
                           libqt5sensors5-dev libqt5sensors5 qml-module-qtcharts \
                           qt5-image-formats-plugins libqt5charts5-dev
 
+#Make directory to build in
 mkdir gcompris-ra
 cd gcompris-ra
 
-
+#Download source from github NOTE unlike gcompris-qt this version include the external qbox package
 git clone https://github.com/ReadAlongToLearnEnglish/GCompris-ra.git
 
 
 cd GCompris-ra
-#this line may be incorrect, it could still be GCompris-qt
-
-git clone https://github.com//qml-box2d/qml-box2d.git external/qml-box2d/
-# Get a copy of this for gcompirs-ra so someone changing it may not be an issue
-
-
-
-
 mkdir build
 cd build
 cmake ..
 make
 
+#install software as superuser. NOTE this step isnt necessary and gcompris-ra can be run from the exe built
 sudo make install
-
 
 
 
