@@ -315,20 +315,21 @@ Window {
             var RA2LEDialog;
             RA2LEDialog = Core.showMessageDialog(
                         pageView,
-                        qsTr("This is the RA2LE(Read along to learn english) fork of GCompris v24.11.0.1") + ("<br>")
-                        + qsTr("built on 19th Nov 2024.") + ("<br>")
+                        qsTr("This is the RA2LE(Read along to learn english) fork of GCompris v25.5.1") + ("<br>")
+                        + qsTr("built on 6th May 2025.") + ("<br>")
                         + qsTr("I hope people will find it useful.\n\n\n\n")
                         + "\n"
                         + qsTr("The fork isn't endorsed by the GCompris development team")
 // TODO:                        + ("<br><br>")
-// TODO:                        + qsTr("Notes: v24.5.0.1 initial build of memory-wordpicture")
+// TODO:                        + qsTr("Notes: v25.5.0.1 initial build of memory-wordpicture prototype")
                         + ("<br><br>")
                         + qsTr("Source code for this project can be found at: https://github.com/ReadAlongToLearnEnglish/gcompris-ra")
                         + ("<br><br>")
-                        + qsTr("The project was initially forked on 17th December 2023.\n")
                         + qsTr("In this current release, my additions are a tiny faction of the total source code and I'm thankful to be able to stand on the shoulders of giants.\n\n\n\n")
                         + ("<br><br>")
-                        + qsTr("This work is released under the same licences as the upstream project available at: https://github.com/gcompris/GCompris-qt"),
+                        + qsTr("This work is released under the same licences as the upstream project available at: https://github.com/gcompris/GCompris-qt")
+                        + ("<br><br>")
+                        + qsTr("The project was initially forked on 17th December 2023.\n"),
                         "", null,
                         "", null,
                         function() {
