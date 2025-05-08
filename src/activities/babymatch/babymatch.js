@@ -210,7 +210,9 @@ function previousLevel() {
 }
 
 function win() {
-    items.bonus.good("flower");
+
+//  Removed by Alex
+    items.bonus.good("wordpicture");
 }
 
 function getClosestSpot(x, y) {
