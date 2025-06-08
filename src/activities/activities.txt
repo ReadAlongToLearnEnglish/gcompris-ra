@@ -186,6 +186,7 @@ tens_complement_use
 tic_tac_toe
 tic_tac_toe_2players
 traffic
+unscramble_words
 watercycle
 wordsgame
 wordpicture
