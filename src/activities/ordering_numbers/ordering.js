@@ -7,6 +7,8 @@
  *   Emmanuel Charruau <echarruau@gmail.com>
  *   Timothée Giet <animtim@gmail.com>
  *
+ *  Updated by Alex <readalongtolearnenglish@gmail.com> to change bonus graphics (success/failure) from lion to tick/cross (wordpicture*.svg)
+ *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 .pragma library
@@ -182,7 +184,7 @@ function checkOrder() {
     items.targetPlaceholder.colorResetRequired = true
 
     if(success)
-        items.bonus.good("lion")
+        items.bonus.good("wordpicture")
     else
-        items.bonus.bad("lion")
+        items.bonus.bad("wordpicture")
 }
