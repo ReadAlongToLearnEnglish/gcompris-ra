@@ -20,17 +20,17 @@ ActivityInfo {
     icon: "unscramble_words/unscramble_words.svg"
     author: "Alex &lt;readalongtolearnenglish@gmail.com&gt;"
     //: Activity title
-    title: qsTr("Unscramble Words v25.5.3 Prototype")
+    title: qsTr("Unscramble Words v25.6.1 Prototype")
     //: Help title
-    description: qsTr("Arrange the given letters to form a meaningful word.")
+    description: qsTr("Arrange the given letters to form a meaningful word. Some words may have a capital letter and full stop as hints.")
     //intro: "Arrange the given letters to form a meaningful word."
     //: Help goal
     goal: qsTr("Order letters to form meaningful word.")
     //: Help prerequisite
     prerequisite: qsTr("Reading.")
     //: Help manual
-    manual: qsTr("You are provided with some letters. Drag and drop them to the upper area to form a meaningful word.   TODO: (Implement This) Some datasets may have their first letters capitalised and/or end with a full stop.")
+    manual: qsTr("You are provided with some letters. Drag and drop them to the upper area to form a meaningful word.  Some datasets may have their first letters capitalised and/or end with a full stop. When you think you have it correct, press ok and it will check, showing any letters in the wrong positions. ")
     section: "reading words"
     createdInVersion: 20000
-    levels: "1,2"
+    levels: "1,2,3,4,5"
 }
