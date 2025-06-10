@@ -23,7 +23,7 @@ Data {
             'G|e|y|s|e|r\n'+
             'A|f|l|o|a|t\n'+
             'R|a|d|i|u|s\n'+
-            'F|i|t|e|r\n'+
+            'F|i|l|t|e|r\n'+
             'C|i|p|h|e|r\n'+
             't|w|e|n|t|y\n'+
             'c|a|r|r|o|t'
