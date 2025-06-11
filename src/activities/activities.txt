@@ -47,6 +47,7 @@ details
 digital_electricity
 drawletters
 drawnumbers
+englishvocabularyexpansionblitz
 enumerate
 erase
 erase_2clic
