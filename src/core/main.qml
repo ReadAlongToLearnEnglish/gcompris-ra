@@ -315,8 +315,8 @@ Window {
             var RA2LEDialog;
             RA2LEDialog = Core.showMessageDialog(
                         pageView,
-                        qsTr("This is the RA2LE(Read along to learn english) fork of GCompris v25.6.0") + ("<br>")
-                        + qsTr("built on 9th June 2025.") + ("<br>")
+                        qsTr("This is the RA2LE(Read along to learn english) fork of GCompris v25.6.2") + ("<br>")
+                        + qsTr("built on 11th June 2025.") + ("<br>")
                         + qsTr("I hope people will find it useful.\n\n\n\n")
                         + "\n"
                         + qsTr("The fork isn't endorsed by the GCompris development team")
