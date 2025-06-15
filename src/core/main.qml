@@ -315,13 +315,13 @@ Window {
             var RA2LEDialog;
             RA2LEDialog = Core.showMessageDialog(
                         pageView,
-                        qsTr("This is the RA2LE(Read along to learn english) fork of GCompris v25.6.0") + ("<br>")
+                        qsTr("This is the RA2LE(Read along to learn english) fork of GCompris v25.6.1") + ("<br>")
                         + qsTr("built on 9th June 2025.") + ("<br>")
                         + qsTr("I hope people will find it useful.\n\n\n\n")
                         + "\n"
                         + qsTr("The fork isn't endorsed by the GCompris development team")
 // TODO:                        + ("<br><br>")
-// TODO:                        + qsTr("Notes: v25.5.0.1 initial build of memory-wordpicture prototype")
+// TODO:                        + qsTr("Notes: v25.6.1 add unscramble words prototype")
                         + ("<br><br>")
                         + qsTr("Source code for this project can be found at: https://github.com/ReadAlongToLearnEnglish/gcompris-ra")
                         + ("<br><br>")
